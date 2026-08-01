@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+.box-full{
+    width: 90%;
+    min-height: 1000px;
+    background-color:rgb(249, 245, 245);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: start;
+    gap: 20px;
+}
+.desserts{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px 200px;
+    gap: 10px;
+    padding: 10px;
+}
+.product{
+    background-color:rgb(238, 236, 231);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    border-radius: 8px;
+}
+.picture{
+    display: grid;
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+}
+.add-btn{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.order{
+  background-color: #b8441f;
+  margin: auto;
+}
+.category{
+    font-size: 11px;
+    color: gray;
+    margin-top: 6px;
+}
+.name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.price{
+    font-size: 13px;
+    color: #c9502f;
+    font-weight: bold;
+}
+.product-title{
+    grid-column: span 3;
+    font-family: sans-serif;
+}
+
+.Your.Cart{
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 20px;
+    margin-top: 10px;
+}
+.Your.Cart::before{
+    content: "Your Cart (7)";
+    display: block;
+    color: #c9502f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.Classic,
+.Vanilla.Bean.Creme,
+.Vanilla{
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee0d8;
+    color: #2b1f1b;
+}
+.Order{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.img{
+    background: #f6f1ea;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 16px;
+}
+.Confirm.Order button{
+    width: 100%;
+    background: #c9502f;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Confirm.Order button:hover{
+    background: #b8441f;
+}
+
+@media only screen and (max-width:600px){
+.box-full{
+    width: 100%;
+    min-height: auto;
+    background-color:rgb(245, 242, 242);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.desserts{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    gap: 10px;
+    padding: 10px;
+}
+.product{
+    background-color:rgb(219, 211, 195);
+}
+.product-title{
+    grid-column: span 1;
+}
+.Your.Cart{
+    position: static;
+}
+}
+</style>
+<body>
+    <div class="box-full">
+        <div class="desserts">
+            <h1 class="product-title">Desserts</h1>
+
+            <div class="product product1">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Waffle</div>
+                <div class="name">Waffle with Berries</div>
+                <div class="price">$6.50</div>
+            </div>
+
+            <div class="product product2">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500');">
+                    <button class="add-btn order">-   1   +</button>
+                </div>
+                <div class="category">Crème Brûlée</div>
+                <div class="name">Vanilla Bean Crème Brûlée</div>
+                <div class="price">$7.00</div>
+            </div>
+
+            <div class="product product3">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Macaron</div>
+                <div class="name">Macaron Mix of Five</div>
+                <div class="price">$8.00</div>
+            </div>
+
+            <div class="product product4">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Tiramisu</div>
+                <div class="name">Classic Tiramisu</div>
+                <div class="price">$5.50</div>
+            </div>
+
+            <div class="product product5">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1519676867240-f03562e64548?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Baklava</div>
+                <div class="name">Pistachio Baklava</div>
+                <div class="price">$4.00</div>
+            </div>
+
+            <div class="product product6">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Pie</div>
+                <div class="name">Lemon Meringue Pie</div>
+                <div class="price">$5.00</div>
+            </div>
+
+            <div class="product produc7">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1586985289906-406988974504?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Cake</div>
+                <div class="name">Red Velvet Cake</div>
+                <div class="price">$4.50</div>
+            </div>
+
+            <div class="product product8">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span></button>
+                </div>
+                <div class="category">Brownie</div>
+                <div class="name">Salted Caramel Brownie</div>
+                <div class="price">$5.50</div>
+            </div>
+
+            <div class="product product9">
+                <div class="picture" style="background-image:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500');">
+                    <button class="add-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+                <div class="category">Panna Cotta</div>
+                <div class="name">Vanilla Panna Cotta</div>
+                <div class="price">$6.50</div>
+            </div>
+
+        </div>
+
+        <div class="Your Cart">
+            <div class="Classic">Classic Tiramisu — 1x @ $5.50 = $5.50</div>
+            <div class="Vanilla Bean Creme">Vanilla Bean Crème Brûlée — 4x @ $7.00 = $28.00</div>
+            <div class="Vanilla ">Vanilla Panna Cotta — 2x @ $6.50 = $13.00</div>
+            <div class="Order">Order Total: $46.50</div>
+            <div class="img"><i class="fa-solid fa-tree"></i> Carbon-neutral delivery</div>
+            <div class="Confirm Order">
+                <button>Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

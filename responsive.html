@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        font-size: 60px;
+        grid-template-columns: 200px 500px 200px;
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas: 
+            'nav nav nav'
+            'side1 content1 side2'
+            'side1 content2 side2'
+            'side1 content3 side2'
+            'footer footer footer';
+        gap: 10px;
+    }
+    @media only screen and (max-width:600px){
+    .container {
+        display: grid;
+        font-size: 60px;
+        grid-template-columns: 200px  200px;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas: 
+            'nav nav '
+            'side1  side2'
+            'content1 content1 '
+            'content2 content2'
+            'content3 content3';
+        gap: 10px;
+       
+    }
+}
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        background-color: gray;
+        grid-area: nav;
+    }
+    .side1 {
+        background-color: cadetblue;
+        grid-area: side1;
+    }
+    .side2{
+        background-color: cadetblue;
+        grid-area: side2;
+    }
+    .content1 {
+        background-color: gray;
+        grid-area: content1;
+    }
+    .content2 {
+        background-color: gray;
+        grid-area: content2;
+    }
+    .content3 {
+        background-color: gray;
+        grid-area: content3;
+    }
+    .footer {
+        background-color: cornflowerblue;
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav center">Nav</div>
+        <div class="side1 center">Side 1</div>
+        <div class="side2 center">Side 2</div>
+        <div class="content1 center">Content 1</div>
+        <div class="content2 center">Content 2</div>
+        <div class="content3 center">Content 3</div>
+        <div class="footer center">Footer</div>
+    </div>
+</body>
+</html>

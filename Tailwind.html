@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-blue-600 p-10 text-white">
+        <div class="mx-auto flex max-w-5xl items-center justify-between">
+            <h1 class="text-xl font-bold">Tailwind Practice</h1>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#lessons" class="hover:underline">Lessons</a>
+                <a href="#practice" class="hover:underline">Practice</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-white px-40 py-16 text-center">
+        <h2 class="text-4xl font-bold text-blue-600">Learn Tailwind CSS</h2>
+        <p class="mt-4 text-lg text-gray-600">
+            Edit the utility classes in this HTML file and see the result.</p>
+            <a href="#practice" class="mt-6 inline-block rounded bg-blue-600 px-6 py-3 text-white hover:bg-blue-700">Get Start</a>
+    </header>
+    <main class="mx-auto max-w-5xl px-4 py-12">
+        <section id="lessons">
+            <h2 class="mb-8 text-center text-3xl font-bold">Basic Lesson</h2>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="rounded bg-white p-6 shadow">
+                    <h3 class="text-xl font-bold text-blue-600">Colors</h3>
+                    <p class="mt-2 text-gray-600">
+                        Practice bg, text, and border color classes.</p>
+                </div>
+                <div class="rounded bg-white p-6 shadow">
+                    <h3 class="text-xl font-bold text-blue-600">Spadding</h3>
+                    <p class="mt-2 text-gray-600">
+                        Practice padding, margin, and gap classes.</p>
+                </div>
+                <div class="rounded bg-white p-6 shadow">
+                    <h3 class="text-xl font-bold text-blue-600">Layout</h3>
+                    <p class="mt-2 text-gray-600">
+                        Practice flex, grid, width, and responsive classes.</p>
+                </div>
+                </section>
+            </div>
+            <section id="practice" class="mt-12 rounded bg-blue-100 p-6">
+                <h2 class="text-2xl font-bold text-blue-800">Student Tasks</h2>
+                <ol class="mt-4 list-decimal space-y-2 pl-6">
+                    <li>Change the navbar from blue to green.</li>
+                    <li>Make the card have rounded-xl corners.</li>
+                    <li>Add a fourth card pere row onmedium screen.</li>
+                </ol>
+            </section>
+    </main>
+    <footer class="bg-gray-800 p-6 text-center text-white">
+        <p>@ 2026 Tailwind CSS Student Practice</p>
+    </footer>
+</body>
+</html>

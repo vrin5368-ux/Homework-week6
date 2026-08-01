@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 420px;
+        border: 5px solid black;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px ;
+        grid-template-rows: 100px 100px 100px;
+        gap: 5px;
+        padding: 5px;
+    }
+    .pink{
+        background-color: pink;
+    }
+    .gray{
+        background-color:rgb(180, 177, 177);
+        grid-column: span 3;
+    }
+    .green{
+        background-color: green;
+    }
+    .blue{
+        background-color: blue;
+        grid-row: span 2;
+    }
+    .light-purple{
+        background-color: rgb(209, 110, 209);
+        grid-row: span 2;
+    }
+    .light-red{
+        background-color: red;
+        grid-row: span 2;
+    }
+    .purple{
+        background-color: purple;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="pink"></div>
+        <div class="gray"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="light-purple"></div>
+        <div class="light-red"></div>
+        <div class="purple"></div>
+    </div>
+</body>
+</html>

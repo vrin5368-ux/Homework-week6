@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 500px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 100px 300px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        gap: 10px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        background-color: antiquewhite;
+        grid-column: span 3;
+    }
+    .content1{
+        background-color: aqua;
+        grid-row: span 3;
+    }
+    .content2{
+        background-color: beige;
+    }
+    .content3{
+        background-color: blue;
+                grid-row: span 3;
+    }
+    .forten{
+        background-color: bisque;
+        grid-column: span 3;
+    }
+    .side{
+        background-color: aquamarine;
+    }
+
+    .side1{
+        background-color:palegreen;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav center">Nav</div>
+        <div class="content1 center">content1</div> 
+        <div class="content2 center">content2</div>
+        <div class="content3 center">content3</div>
+        <div class="side center">side</div>
+        <div class="side1 center">side1</div>
+        <div class="forten center">forten</div>
+    </div>
+</body>
+</html>
